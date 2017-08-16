@@ -6,12 +6,11 @@
 3. Destroy vvv1 vagrant-box by `vagrant destroy`
 4. Rename vagrant-local -folder to vagrant-local-vvv1
 5. Install vvv2 as usually by following the instructions in https://varyingvagrantvagrants.org/docs/en-US/installation/
-6. Override the original Vagrantfile and provision/provision-site.sh -files with the files in this repo (this will give you possibility to define live_url for proxying images from live-site)
-7. Add the old sites to vvv-custom.yml (you can get the names by running `echo-installations.sh` and after that it is just some multicursor fun)
-8. Run `vagrant up --provision`
-9. Put old databases to `vagrant-local/database/backups` and `vagrant ssh`
-10. Run the `import-sql.sh` of this repo inside `/srv/database`
-11. Run `git-reset-all-repos.sh` to reset all your repos in new vvv2
+6. Add the old sites to vvv-custom.yml (you can get the names by running `echo-installations.sh` and after that it is just some multicursor fun)
+7. Run `vagrant up --provision`
+8. Put old databases to `vagrant-local/database/backups` and `vagrant ssh`
+9. Run the `import-sql.sh` of this repo inside `/srv/database`
+10. Run `git-reset-all-repos.sh` to reset all your repos in new vvv2
 
 ## Problems with Mailcatcher?
 I did have some problems with Mailcatcher. VVV tried to install it, but failed
