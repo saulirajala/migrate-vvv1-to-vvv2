@@ -30,4 +30,4 @@ cp "/srv/config/php-config/mailcatcher.ini" "/etc/php/7.0/mods-available/mailcat
 ```
 
 ## What else?
-Check out my vvv2 provision default files: https://github.com/saulirajala/vvv2-provision-default
+Check out my fork of vvv2 custom site template: https://github.com/saulirajala/custom-site-template
