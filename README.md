@@ -18,7 +18,7 @@ example:
 
 7. Run `vagrant up --provision`
 8. Put old databases to `vagrant-local/database/backups` and `vagrant ssh`
-9. Run the `import-sql.sh` of this repo inside `/srv/database`
+9. Run the `import-sql.sh` of this repo inside `/srv/database` (You might need to change `.dev` to `.test` after you have imported the database using `wp search-replace`)
 10. Copy all the git-files and wp-config.php from old vvv1 by running `copy-git-repos-from-vvv1.sh`
 11. Run `git-reset-all-repos.sh` to reset all your repos in new vvv2
 

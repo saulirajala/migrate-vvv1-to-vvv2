@@ -20,8 +20,7 @@ for installation in *; do
       cp -a .git ../../../../vagrant-local/www/$installation/public_html/.git
       cp .gitignore ../../../../vagrant-local/www/$installation/public_html/.gitignore
       cp -a .idea ../../../../vagrant-local/www/$installation/public_html/.idea
-      mv ../../../../vagrant-local/www/$installation/public_html/wp-config.php ../../../../vagrant-local/www/$installation/public_html/wp-config-backup.php
-      cp wp-config.php ../../../../vagrant-local/www/$installation/public_html/wp-config.php
+      cp wp-config.php ../../../../vagrant-local/www/$installation/public_html/wp-config-vvv1.php
     fi
     cd ../..
   fi
