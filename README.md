@@ -5,7 +5,17 @@
 3. Destroy vvv1 vagrant-box by `vagrant destroy`
 4. Rename vagrant-local -folder to vagrant-local-vvv1
 5. Install vvv2 as usually by following the instructions in https://varyingvagrantvagrants.org/docs/en-US/installation/
-6. Add the old sites to vvv-custom.yml (you can get the names by running `echo-installations.sh` and after that it is just some multicursor fun)
+6. Add the old sites to vvv-custom.yml (you can get the names by running `echo-installations.sh` and after that it is just some multicursor fun). Follow this format in vvv-custom.yml:
+```
+example:
+  repo: https://github.com/saulirajala/custom-site-template
+  custom:
+    wp_type: subdirectory
+    live_url: https://example.com
+  hosts:
+    - example.test
+```
+
 7. Run `vagrant up --provision`
 8. Put old databases to `vagrant-local/database/backups` and `vagrant ssh`
 9. Run the `import-sql.sh` of this repo inside `/srv/database`
