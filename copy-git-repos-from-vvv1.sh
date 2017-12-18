@@ -1,10 +1,11 @@
 # Copy all the Git repositories from your VVV1 -environment to VVV2-environment
+#
 # VVV2 is assumed to locate in ~/vagrant-local
 #
 # How to use?
-# 1. Put this file inside www-folder
-# 2. Make sure it is executable inside vagrant-box by running chmod +x ./copy-git-repos-from-vvv1.sh
-# 3. Inside your vagrant-box in www-folder execute the script (./copy-git-repos-from-vvv1.sh)
+# 1. Put this file inside www-folder of the old VVV1 -folder
+# 2. Make sure it is executable by running chmod +x ./copy-git-repos-from-vvv1.sh
+# 3. Inside your www-folder of old VVV1 execute the script (./copy-git-repos-from-vvv1.sh)
 #
 #!/bin/bash
 

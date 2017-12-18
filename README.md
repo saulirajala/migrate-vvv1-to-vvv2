@@ -1,8 +1,7 @@
 # How to migrate from VVV1 to VVV2?
 
 1. Make sure you have backups from the old vagrant-local -folder!
-1. Copy all the databases from old vvv1 by running `copy-all-databases.sh`
-2. Copy all the git-files and wp-config.php from old vvv1 by running `copy-git-repos-from-vvv1.sh`
+2. Copy all the databases from old vvv1 by running `copy-all-databases.sh`
 3. Destroy vvv1 vagrant-box by `vagrant destroy`
 4. Rename vagrant-local -folder to vagrant-local-vvv1
 5. Install vvv2 as usually by following the instructions in https://varyingvagrantvagrants.org/docs/en-US/installation/
@@ -10,7 +9,8 @@
 7. Run `vagrant up --provision`
 8. Put old databases to `vagrant-local/database/backups` and `vagrant ssh`
 9. Run the `import-sql.sh` of this repo inside `/srv/database`
-10. Run `git-reset-all-repos.sh` to reset all your repos in new vvv2
+10. Copy all the git-files and wp-config.php from old vvv1 by running `copy-git-repos-from-vvv1.sh`
+11. Run `git-reset-all-repos.sh` to reset all your repos in new vvv2
 
 ## Problems with Mailcatcher?
 I did have some problems with Mailcatcher. VVV tried to install it, but failed
